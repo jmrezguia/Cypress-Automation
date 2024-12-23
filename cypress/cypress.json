@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+
+    "viewportWidth": 1280,
+    "viewportHeight": 720,
+    "defaultCommandTimeout": 8000,
+    "env": {
+      "userName": "Admin",
+      "userPassword": "admin123"
+    }
+  }
+  
