@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "baseUrl": "https://opensource-demo.orangehrmlive.com",
 
     "viewportWidth": 1280,
     "viewportHeight": 720,

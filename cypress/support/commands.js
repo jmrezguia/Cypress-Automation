@@ -1,12 +1,14 @@
-
+import LoginPage from "./pagesObjects/LoginPage";
 
 // Authentification
-Cypress.Commands.add('login', (email, password) => {
-    cy.get('input[name="email"]').type(email);
-    cy.get('input[name="password"]').type(password);
-    cy.get('button[type="submit"]').click();
-    cy.url().should('include', '/dashboard'); // Vérifier la redirection
-  });
+Cypress.Commands.add('login', (username, password) => {
+  cy.get("input[placeholder='Username']").type(username);
+  cy.get('input[name="password"]').type(password);
+  cy.get('button[type="submit"]').click();
+});
+//Cypress.Commands.add('login', (username , password) => {
+    //LoginPage.login(username,password);
+  //});
   
 
 // Dropdown

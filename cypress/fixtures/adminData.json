@@ -1,0 +1,11 @@
+{
+    "validUser": {
+      "role": "Admin",
+      "status": "Enabled",
+      "employeeName": "Ranga  Akunuri",
+      "username": "adminUser123",
+      "password": "Password123!",
+      "confirmPassword": "Password123!"
+    }
+  }
+  

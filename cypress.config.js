@@ -1,16 +1,14 @@
-
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: 'https://opensource-demo.orangehrmlive.com', // Définir le baseUrl
     setupNodeEvents(on, config) {
-      // Node event listeners
+      // Implémentez les événements node ici si nécessaire
     },
-    baseUrl: "https://opensource-demo.orangehrmlive.com", // Mettez votre URL ici
-    chromeWebSecurity: false, // Si nécessaire
   },
-  video: false, // Désactiver l'enregistrement vidéo
-  watchForFileChanges: false, // Réduit les problèmes liés aux fichiers
+  chromeWebSecurity: false, // Désactive la sécurité Web Chrome si nécessaire
+  video: false, // Désactive l'enregistrement vidéo
+  watchForFileChanges: false, // Réduit les problèmes liés aux fichiers modifiés
 });
-
 

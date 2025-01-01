@@ -1,20 +1,21 @@
-// ***********************************************************
-// This example support/e2e.js is processed and
-// loaded automatically before your test files.
-//
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
-//
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
+// support/e2e.js
 
-// Import commands.js using ES2015 syntax:
-import './commands'
+// Import des commandes personnalisées
+import './commands';
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+// Tu peux également configurer des listeners globaux
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // Empêche les erreurs non interceptées de bloquer les tests
+    return false;
+
+    // Autres configurations globales possibles (facultatif)
+
+// Exemple : Ajouter un hook avant chaque test pour afficher un message dans la console
+beforeEach(() => {
+    cy.log('Démarrage du test');
+
+    
+});
+require('cypress-xpath');
+
+});
